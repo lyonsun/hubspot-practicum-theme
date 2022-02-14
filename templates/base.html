@@ -1,0 +1,26 @@
+<!--
+    templateType: page
+    label: Practicum page template - Liang Sun
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ require_css(get_asset_url('../css/main.css')) }}
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    {% global_partial path="./partials/header.html" %}
+
+    <main id="content">
+      {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
+    </main>
+
+    {% global_partial path="./partials/footer.html" %}
+
+    {{ standard_footer_includes }}
+  </body>
+</html>

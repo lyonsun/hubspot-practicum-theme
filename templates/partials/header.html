@@ -1,0 +1,16 @@
+<!--
+    templateType: global_partial
+    label: Page Header
+    isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+
+<header>
+    <a href="#content" class="screen-reader-text">Skip to content</a>
+    <h1>
+        {% module "page_heading" path="@hubspot/text" label="Page Heading" %}
+    </h1>
+    {% module "header_quote" path="@hubspot/rich_text" label="Header Quote" %}
+</header>
+
+<!-- End partial -->
