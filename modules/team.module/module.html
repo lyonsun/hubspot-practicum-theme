@@ -1,0 +1,23 @@
+<!-- module html  -->
+<div class="team">
+	{% for member in module.team_member %}
+		<div class="team__member">
+			<div class="featured-image">
+				{% if member.member_image.src %}
+					{% set sizeAttrs = 'width="{{ member.member_image.width }}" height="{{ member.member_image.height }}"' %}
+					{% if member.member_image.size_type == 'auto' %}
+						{% set sizeAttrs = '' %}
+					{% elif member.member_image.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ member.member_image.max_width }}" height="{{ member.member_image.max_height }}"' %}
+					{% endif %}
+					{% set loadingAttr = member.member_image.loading != 'disabled' ? 'loading="{{ member.member_image.loading }}"' : '' %}
+					<img src="{{ member.member_image.src }}" alt="{{ member.member_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				{% endif %}
+			</div>
+			<div class="member-info">
+				{% inline_text field="member_name" value="{{ member.member_name }}" %}
+				{% inline_text field="member_position" value="{{ member.member_position }}" %}
+			</div>
+		</div>
+	{% endfor %}
+</div>

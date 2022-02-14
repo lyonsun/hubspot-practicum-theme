@@ -15,20 +15,20 @@
         "load_external_fonts": true,
         "type": "font",
         "default": {
-          "size": 12,
-          "font": "Newsreader",
-          "font_set": "GOOGLE",
-          "size_unit": "px",
-          "color": "#000",
-          "styles": { }
+            "size": 12,
+            "font": "Newsreader",
+            "font_set": "GOOGLE",
+            "size_unit": "px",
+            "color": "#000",
+            "styles": {}
         },
         "visibility": {
-          "hidden_subfields": {
-            "bold": true,
-            "italic": true,
-            "underline": true,
-            "size": true
-          }
+            "hidden_subfields": {
+                "bold": true,
+                "italic": true,
+                "underline": true,
+                "size": true
+            }
         }
-      }
+    }
 ]

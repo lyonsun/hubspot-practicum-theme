@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <title>{{ content.html_title }}</title>
     <meta name="description" content="{{ content.meta_description }}">
+    {{ require_css(get_asset_url('../css/layout.css')) }}
     {{ require_css(get_asset_url('../css/main.css')) }}
     {{ standard_header_includes }}
   </head>
@@ -17,7 +18,7 @@
 
     <main id="content">
       <div class="container">
-        {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
+        {% module "team_module" path="../modules/team", label="Team" %}
       </div>
     </main>
 

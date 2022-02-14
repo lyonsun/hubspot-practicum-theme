@@ -1,0 +1,77 @@
+[ {
+  "id" : "7e973c59-f7b3-0aa8-a717-6565e5f233b4",
+  "name" : "team_member",
+  "display_width" : null,
+  "label" : "Team Member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "b8ba2931-7d50-c445-d282-ac314172b4c7",
+    "name" : "member_image",
+    "display_width" : null,
+    "label" : "Member Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/4546470/Portrait%20of%20kitty%20cat%20in%20hands.jpeg",
+      "alt" : "Portrait of kitty cat in hands",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 667,
+      "max_width" : 1000,
+      "max_height" : 667
+    }
+  }, {
+    "id" : "6ef3838d-cf4c-578e-ebbf-bc53c2011b3e",
+    "name" : "member_name",
+    "display_width" : null,
+    "label" : "Member Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "John Doe"
+  }, {
+    "id" : "488e2694-31ae-21c9-6b7f-655c5a325f37",
+    "name" : "member_position",
+    "display_width" : null,
+    "label" : "Member Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "CEO"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent20.net/hubfs/4546470/Portrait%20of%20kitty%20cat%20in%20hands.jpeg",
+      "alt" : "Portrait of kitty cat in hands",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 667,
+      "max_width" : 1000,
+      "max_height" : 667
+    },
+    "member_name" : "John Doe",
+    "member_position" : "CEO"
+  }
+} ]
