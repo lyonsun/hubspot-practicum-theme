@@ -7,14 +7,16 @@
 
 <header>
     <a href="#content" class="screen-reader-text">Skip to content</a>
-    <h1>
-        {% module "page_heading" path="@hubspot/text" label="Page Heading" %}
-    </h1>
-    <div class="header__quote">
-        {% module "header_quote" path="@hubspot/rich_text" label="Header Quote" %}
-    </div>
+    <div class="container">
+        <h1>
+            {% module "page_heading" path="@hubspot/text" label="Page Heading" %}
+        </h1>
+        <div class="header__quote">
+            {% module "header_quote" path="@hubspot/rich_text" label="Header Quote" %}
+        </div>
 
-    {% menu "header_menu" id=66210624182, label='Header Menu' %}
+        {% menu "header_menu" id=66210624182, label='Header Menu' %}
+    </div>
 </header>
 
 <!-- End partial -->

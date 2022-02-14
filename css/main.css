@@ -15,12 +15,17 @@ body {
     flex-direction: column;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .screen-reader-text {
     display: none;
 }
 
 header {
-    padding: 1rem 4rem;
+    padding: 1rem;
     background-color: {{ theme.accent_color.color }};
     border-bottom: 1px solid #aaaaaa;
 }
@@ -31,8 +36,8 @@ header {
 
 .hs-menu-wrapper ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin-bottom: 1rem;
     display: flex;
 }
 
@@ -50,12 +55,12 @@ header {
 }
 
 main {
-    padding: 1rem 4rem;
+    padding: 1rem;
     flex: 1;
 }
 
 footer {
-    padding: 1rem 4rem;
+    padding: 1rem;
     background-color: {{ theme.accent_color.color }};
     border-top: 1px solid #aaaaaa;
 }

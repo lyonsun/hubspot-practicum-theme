@@ -16,7 +16,9 @@
     {% global_partial path="./partials/header.html" %}
 
     <main id="content">
-      {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
+      <div class="container">
+        {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
+      </div>
     </main>
 
     {% global_partial path="./partials/footer.html" %}
