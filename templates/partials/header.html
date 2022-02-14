@@ -10,7 +10,11 @@
     <h1>
         {% module "page_heading" path="@hubspot/text" label="Page Heading" %}
     </h1>
-    {% module "header_quote" path="@hubspot/rich_text" label="Header Quote" %}
+    <div class="header__quote">
+        {% module "header_quote" path="@hubspot/rich_text" label="Header Quote" %}
+    </div>
+
+    {% menu "header_menu" id=66210624182, label='Header Menu' %}
 </header>
 
 <!-- End partial -->

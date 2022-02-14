@@ -1,0 +1,34 @@
+[
+    {
+        "label": "Accent Color",
+        "name": "accent_color",
+        "type": "color",
+        "default": {
+            "color": "#eeeeee"
+        }
+    },
+    {
+        "name": "font",
+        "label": "Font",
+        "required": false,
+        "locked": false,
+        "load_external_fonts": true,
+        "type": "font",
+        "default": {
+          "size": 12,
+          "font": "Newsreader",
+          "font_set": "GOOGLE",
+          "size_unit": "px",
+          "color": "#000",
+          "styles": { }
+        },
+        "visibility": {
+          "hidden_subfields": {
+            "bold": true,
+            "italic": true,
+            "underline": true,
+            "size": true
+          }
+        }
+      }
+]
